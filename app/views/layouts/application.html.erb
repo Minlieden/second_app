@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="page-wrapper">
+      <div id="header">
+        <%= render 'shared/navbar'%>
+      </div>
+      <div class="wrapper style1">
+        <article id="main" class="container special">
+          <%= yield %>
+        </article>
+      </div>
+    </div>
+    <div id="footer">
+      <%= render 'shared/footer'%>
   </body>
 </html>
